@@ -12,7 +12,7 @@ Register custom migration tasks that can be triggered from a dashboard in the ad
 ### Requirements
 
 ```
-PHP >= 7.1
+PHP = 7.0
 WordPress >= 4.8
 ```
 
@@ -28,7 +28,7 @@ compatibility is entirely coincidental.
 To install this library, use Composer:
 
 ```
-composer require thefrosty/wp-upgrade-task-runner:~1.1
+composer require thefrosty/wp-upgrade-task-runner:dev-php70
 ```
 
 ## Getting Started

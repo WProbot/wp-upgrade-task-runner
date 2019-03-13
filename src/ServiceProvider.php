@@ -14,16 +14,16 @@ use TheFrosty\WpUpgradeTaskRunner\Tasks\TaskLoader;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public const HTTP_FOUNDATION_REQUEST = 'http.request';
-    public const TASK_LOADER = 'upgrade.task_loader';
-    public const UPGRADE_MODEL_FACTORY = 'upgrade.model_factory';
-    public const UPGRADE_PROVIDER = 'upgrade.provider';
+    const HTTP_FOUNDATION_REQUEST = 'http.request';
+    const TASK_LOADER = 'upgrade.task_loader';
+    const UPGRADE_MODEL_FACTORY = 'upgrade.model_factory';
+    const UPGRADE_PROVIDER = 'upgrade.provider';
 
     /**
      * Register services.
      * @param PimpleContainer $container Container instance.
      */
-    public function register(PimpleContainer $container): void
+    function register(PimpleContainer $container)
     {
         $container[self::HTTP_FOUNDATION_REQUEST] = static function () { // phpcs:ignore
             return Request::createFromGlobals();

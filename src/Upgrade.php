@@ -18,12 +18,12 @@ class Upgrade extends AbstractHookProvider implements HttpFoundationRequestInter
 {
     use HttpFoundationRequestTrait;
 
-    public const AJAX_ACTION = 'wp_upgrade_schedule_task_event';
-    public const UPGRADES_LIST_TABLE_ACTION = 'wp_upgrade_task_runner_screen';
-    public const MENU_SLUG = 'upgrade-task-runner';
-    public const NONCE_NAME = '_task_runner_execute_nonce';
-    public const OPTION_NAME = 'wp_upgrade_task_runner';
-    private const NONCE_KEY = 'task_runner_migration_upgrades_nonce_%s';
+    const AJAX_ACTION = 'wp_upgrade_schedule_task_event';
+    const UPGRADES_LIST_TABLE_ACTION = 'wp_upgrade_task_runner_screen';
+    const MENU_SLUG = 'upgrade-task-runner';
+    const NONCE_NAME = '_task_runner_execute_nonce';
+    const OPTION_NAME = 'wp_upgrade_task_runner';
+    const NONCE_KEY = 'task_runner_migration_upgrades_nonce_%s';
 
     /**
      * Container object.

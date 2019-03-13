@@ -18,7 +18,7 @@ class TaskLoader implements \IteratorAggregate, WpHooksInterface
 {
     use HooksTrait;
 
-    public const REGISTER_TASKS_TAG = 'wp_upgrade_task_runner/register_tasks';
+    const REGISTER_TASKS_TAG = 'wp_upgrade_task_runner/register_tasks';
 
     /**
      * Upgrade screen ID.

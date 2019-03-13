@@ -15,12 +15,12 @@ use TheFrosty\WpUpgradeTaskRunner\Models\UpgradeModelFactory;
  */
 class UpgradesListTable extends \WP_List_Table
 {
-    private const COLUMN_DATE = UpgradeModel::FIELD_DATE;
-    private const COLUMN_TITLE = UpgradeModel::FIELD_TITLE;
-    private const COLUMN_DESCRIPTION = UpgradeModel::FIELD_DESCRIPTION;
-    private const COLUMN_EXECUTED = 'executed';
-    private const DESCRIPTION_CONCATENATION_LENGTH = 220;
-    private const PER_PAGE = 30;
+    const COLUMN_DATE = UpgradeModel::FIELD_DATE;
+    const COLUMN_TITLE = UpgradeModel::FIELD_TITLE;
+    const COLUMN_DESCRIPTION = UpgradeModel::FIELD_DESCRIPTION;
+    const COLUMN_EXECUTED = 'executed';
+    const DESCRIPTION_CONCATENATION_LENGTH = 220;
+    const PER_PAGE = 30;
 
     /**
      * Array of data registered to be updated.

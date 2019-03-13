@@ -13,10 +13,10 @@ use TheFrosty\WpUpgradeTaskRunner\Models\UpgradeModel;
  */
 class ExampleMigrationTask extends AbstractTaskRunner
 {
-    public const DATE = '2018-05-23';
-    public const DESCRIPTION = 'This is an example upgrade/migration task. It does not do anything 
+    const DATE = '2018-05-23';
+    const DESCRIPTION = 'This is an example upgrade/migration task. It does not do anything 
     except sleep for five seconds before it "completes" it\'s task.';
-    public const TITLE = 'Example Migration Task';
+    const TITLE = 'Example Migration Task';
 
     /**
      * Dispatch the migration task.
